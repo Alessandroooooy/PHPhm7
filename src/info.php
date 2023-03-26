@@ -9,7 +9,7 @@ if (!empty($_SESSION['userinfo']) && !empty($_SESSION['emailinfo']) && !empty($_
         <?php endforeach; ?>
     </ul>
     <ul>
-        <?php foreach ($_SESSION['address']as $key => $val): ?>
+        <?php foreach ($_SESSION['emailinfo']as $key => $val): ?>
             <li><strong><?= $key; ?></strong> : <?= $val; ?></li>
         <?php endforeach; ?>
     </ul>

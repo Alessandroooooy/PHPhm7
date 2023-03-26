@@ -12,12 +12,12 @@ function handler() : void
     if (empty($_POST)) {
         return;
     }
-    if(isset($_POST['nameinfo']) && isset($_POST['emailinfo']) && isset($_POST['select'])){
-        $nameinfo = $_POST['nameinfo'];
+    if(isset($_POST['userinfo']) && isset($_POST['emailinfo']) && isset($_POST['select'])){
+        $userinfo = $_POST['nameinfo'];
         $emailinfo = $_POST['emailinfo'];
         $select = $_POST['select'];
     
-        $data = array($nameinfo, $emailinfo, $select);
+        $data = array($userinfo, $emailinfo, $select);
     
         $file = fopen('registrations.csv', 'a');
     
